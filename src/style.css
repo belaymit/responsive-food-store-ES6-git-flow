@@ -30,6 +30,7 @@
   --border: 0.2rem solid rgba(0, 0, 0, 0.1);
   --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
   --outline-hover: 0.2rem solid var(--black);
+
   /* font family */
 
   --font-family-primary: "Poppins", sans-serif;
@@ -129,7 +130,8 @@ p {
   color: var(--color-white);
   border-color: var(--color-indigo);
 }
-/* HEADER SECTION STARTS*/
+
+/* HEADER SECTION STARTS */
 .header {
   position: fixed;
   top: 0;
@@ -170,6 +172,11 @@ p {
   margin: 0 1rem;
   color: var(--color-black);
   transition: var(--transition);
+}
+
+.header .login-form p a {
+  color: #3498db;
+  text-decoration: underline;
 }
 
 .header .navbar a:hover {
@@ -285,6 +292,12 @@ p {
   color: var(--dark-red);
 }
 
+.header .login-form h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
 .header .shopping-cart .box .content h3 {
   color: var(--color-black);
   font-size: 1.7rem;
@@ -326,12 +339,6 @@ p {
   text-align: center;
 }
 
-.header .login-form h3 {
-  font-size: 2.5rem;
-  text-transform: capitalize;
-  color: var(--black);
-}
-
 .header .login-form .input {
   width: 100%;
   margin: 1rem 0;
@@ -348,6 +355,7 @@ p {
 .header .login-form .input:focus {
   outline: 0.3px solid rgb(124, 60, 8);
 }
+
 .header .login-form .input::placeholder {
   padding: 0.3rem;
   font-size: 1.5rem;
@@ -360,13 +368,56 @@ p {
   color: var(--light-clr);
 }
 
-.header .login-form p a {
-  color: #3498db;
-  text-decoration: underline;
-}
-
 .header .login-form.active {
   right: 2rem;
   transition: 0.5s linear;
 }
-/* HEADER SECTION ENDS*/
+
+/* HEADER SECTION ENDS */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+    transition: 0.5s linear;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+
+  .header .search-form {
+    width: 90%;
+  }
+}
