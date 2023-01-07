@@ -131,6 +131,10 @@ p {
   border-color: var(--color-indigo);
 }
 
+section {
+  padding: 2rem 9%;
+}
+
 /* HEADER SECTION STARTS */
 .header {
   position: fixed;
@@ -374,6 +378,51 @@ p {
 }
 
 /* HEADER SECTION ENDS */
+
+/* HOME SECTION STARTS */
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./assets/background-image-II.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+}
+.home .content {
+  text-align: center;
+  width: 60rem;
+  color: var(--color-white);
+}
+
+.home .content .btn {
+  background: var(--dark-orange);
+  border-color: var(--dark-orange);
+  color: var(--color-white);
+}
+
+.home .content h3 {
+  color: #c9c8d3;
+  margin-top:10rem;
+  font-size: 3.5rem;
+  background: -webkit-linear-gradient(#e1e1e4, hsl(330, 12%, 93%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home .content p {
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.home .content .btn:hover {
+  background: transparent;
+  border-color: whitesmoke;
+}
+/* HOME SECTION ENDS */
 
 /* MEDIA QUERIES */
 
