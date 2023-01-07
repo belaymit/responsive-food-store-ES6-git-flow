@@ -4,3 +4,5 @@ export const shoppingCart = document.querySelector('.shopping-cart');
 export const cartBtn = document.querySelector('#cart-btn');
 export const loginForm = document.querySelector('.login-form');
 export const loginBtn = document.querySelector('#login-btn');
+export const navBar = document.querySelector('.navbar');
+export const menuBtn = document.querySelector('#menu-btn');
