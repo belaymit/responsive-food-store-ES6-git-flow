@@ -120,6 +120,7 @@ p {
   border: 0.2rem solid var(--black);
   color: var(--black);
   cursor: pointer;
+  background: none;
   transition: var(--transition);
 }
 
@@ -311,5 +312,61 @@ p {
   display: block;
   text-align: center;
   margin: 1rem;
+}
+
+.header .login-form {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  width: 30rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: var(--color-white);
+  text-align: center;
+}
+
+.header .login-form h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.header .login-form .input {
+  width: 100%;
+  margin: 1rem 0;
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  border: none;
+  outline: 0.3px solid rgb(193, 199, 193);
+}
+
+.header .login-form .input:focus {
+  outline: 0.3px solid rgb(124, 60, 8);
+}
+.header .login-form .input::placeholder {
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  font-family: var(--font-family-primary);
+}
+
+.header .login-form p {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  color: var(--light-clr);
+}
+
+.header .login-form p a {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.header .login-form.active {
+  right: 2rem;
+  transition: 0.5s linear;
 }
 /* HEADER SECTION ENDS*/
