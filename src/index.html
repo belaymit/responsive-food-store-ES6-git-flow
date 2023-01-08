@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -26,9 +30,9 @@
       <a href="#" class="logo"
         ><i class="fas fa-shopping-basket"></i><span>Food App</span></a
       >
-      <nav class="navbar">  
+      <nav class="navbar">
         <a href="#home">Home</a>
-        <a href="#feature">feature</a>
+        <a href="#features">feature</a>
         <a href="#products">products</a>
         <a href="#catergories">catergories</a>
         <a href="#review">review</a>
@@ -41,13 +45,13 @@
         <div class="fas fa-user" id="login-btn"></div>
       </div>
       <form action="" class="search-form">
-        <input type="search" id="search-box" placeholder="Search...">
+        <input type="search" id="search-box" placeholder="Search..." />
         <label for="search-box" class="fas fa-search"></label>
       </form>
       <div class="shopping-cart">
         <div class="box">
           <i class="fas fa-trash"></i>
-          <img src="./assets/cheese-burger.jfif" alt="">
+          <img src="./assets/cheese-burger.jfif" alt="" />
           <div class="content">
             <h3>Cheese Burger</h3>
             <span class="price">$15.97/-</span>
@@ -56,7 +60,7 @@
         </div>
         <div class="box">
           <i class="fas fa-trash"></i>
-          <img src="./assets/juice.jfif" alt="">
+          <img src="./assets/juice.jfif" alt="" />
           <div class="content">
             <h3>Fruit Juice</h3>
             <span class="price">$15.97/-</span>
@@ -65,7 +69,7 @@
         </div>
         <div class="box">
           <i class="fas fa-trash"></i>
-          <img src="./assets/sandwich.jfif" alt="">
+          <img src="./assets/sandwich.jfif" alt="" />
           <div class="content">
             <h3>Sandwich</h3>
             <span class="price">$15.97/-</span>
@@ -77,22 +81,195 @@
       </div>
       <form action="" class="login-form">
         <h3>Login</h3>
-        <input type="email" class="input" placeholder="Email...">
-        <input type="password" class="input" placeholder="Password...">
+        <input type="email" class="input" placeholder="Email..." />
+        <input type="password" class="input" placeholder="Password..." />
         <p>forget password? <a href="#">click here</a></p>
         <p>don't have account? <a href="#">create now</a></p>
-        <input type="submit" value="Login" class="btn">
+        <input type="submit" value="Login" class="btn" />
       </form>
     </header>
     <section class="home" id="home">
       <div class="content">
         <h3>fresh and <span>organic</span> products for you</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Placeat, distinctio ea? Beatae, laboriosam? Quam odio
-           doloremque quae sunt tenetur fugiat!
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+          distinctio ea? Beatae, laboriosam? Quam odio doloremque quae sunt
+          tenetur fugiat!
         </p>
         <a href="#" class="btn">shop now</a>
       </div>
     </section>
+    <section class="features" id="features">
+      <h1 class="heading">Our <span>features</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./assets/pizza.jfif" alt="pizza" />
+          <h3>Fresh Pizza</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, sunt
+            dicta temporibus modi quae nemo optio cum repellat minus nihil!
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="./assets/cheese-burger.jfif" alt="cheese-burger" />
+          <h3>Fresh Cheese Burger</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, sunt
+            dicta temporibus modi quae nemo optio cum repellat minus nihil!
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+          <img src="./assets/sandwich.jfif" alt="Sandwich" />
+          <h3>Fresh Sandwich</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, sunt
+            dicta temporibus modi quae nemo optio cum repellat minus nihil!
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+          <img src="./assets/juice.jfif" alt="fruit" />
+          <h3>Fresh Fruit Juice</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, sunt
+            dicta temporibus modi quae nemo optio cum repellat minus nihil!
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <h1 class="heading">our <span>Products</span></h1>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./assets/sandwich.jfif" alt="sandwich" />
+            <h3>fresh sandwich</h3>
+            <div class="price">$4.99/- - $10.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./assets/juice.jfif" alt="juice" />
+            <h3>fruit juice</h3>
+            <div class="price">$4.99/- - $10.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./assets/orange.jfif" alt="fresh-orange" />
+            <h3>fresh orange</h3>
+            <div class="price">$4.99/- - $10.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./assets/mangoes.jfif" alt="mangoes" />
+            <h3>fresh mangoes</h3>
+            <div class="price">$4.99/- - $10.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./assets/pinapple.jfif" alt="pineapple" />
+            <h3>fresh pineapple</h3>
+            <div class="price">$4.99/- - $10.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="./assets/sandwich.jfif" alt="sandwich" />
+            <h3>fresh sandwich</h3>
+            <div class="price">$4.99/- - $10.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./assets/juice.jfif" alt="juice" />
+            <h3>fruit juice</h3>
+            <div class="price">$4.99/- - $10.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./assets/orange.jfif" alt="fresh-orange" />
+            <h3>fresh orange</h3>
+            <div class="price">$4.99/- - $10.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./assets/mangoes.jfif" alt="mangoes" />
+            <h3>fresh mangoes</h3>
+            <div class="price">$4.99/- - $10.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="./assets/pinapple.jfif" alt="pineapple" />
+            <h3>fresh pineapple</h3>
+            <div class="price">$4.99/- - $10.99</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
